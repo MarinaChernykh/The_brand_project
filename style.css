@@ -265,6 +265,7 @@
 }
 .sort__details {
   position: relative;
+  z-index: 1;
 }
 .sort__summary {
   display: flex;
@@ -332,6 +333,220 @@
 }
 .paginator__icon:hover path {
   fill: #F16D7F;
+}
+
+.shopping-cart {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-cart__container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.shopping-cart__product-item {
+  background: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 652px;
+  height: 306px;
+  display: flex;
+  position: relative;
+}
+.shopping-cart__product-info {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 22px 31px 62px 31px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.shopping-cart__product-header {
+  color: #222;
+  font-size: 24px;
+  padding-bottom: 36px;
+}
+.shopping-cart__product-text {
+  color: #575757;
+}
+.shopping-cart__product-text-colored {
+  color: #F16D7F;
+}
+.shopping-cart__product-text-basic {
+  color: #6F6E6E;
+}
+.shopping-cart__qty {
+  width: 44px;
+  height: 25px;
+  margin-left: 24px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  color: #656565;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.shopping-cart__product-remove {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  cursor: pointer;
+  transition: fill 0.5s;
+}
+.shopping-cart__product-remove:hover path {
+  fill: #F16D7F;
+}
+.shopping-cart__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+  padding-bottom: 128px;
+}
+.shopping-cart__button-link {
+  display: block;
+  width: 235px;
+  height: 50px;
+  border: 1px solid #A4A4A4;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  transition: all 0.3s;
+}
+.shopping-cart__button-link:hover {
+  border: 1px solid #F16D7F;
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.adress {
+  padding-top: 17px;
+}
+.adress__title {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.adress__input {
+  box-sizing: border-box;
+  width: 360px;
+  height: 45px;
+  margin-bottom: 20px;
+  border: 1px solid #A4A4A4;
+  padding: 12px 16px 16px 16px;
+}
+.adress__input::-moz-placeholder {
+  color: #222;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Lato;
+}
+.adress__input::placeholder {
+  color: #222;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Lato;
+}
+.adress__submit-button {
+  box-sizing: border-box;
+  width: 101px;
+  height: 35px;
+  background-color: #FFFFFF;
+  border: 1px solid #A4A4A4;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.adress__submit-button:hover {
+  border: 1px solid #F16D7F;
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+
+.bill {
+  box-sizing: border-box;
+  width: 360px;
+  height: 214px;
+  margin-top: 60px;
+  padding: 39px 44px 42px 44px;
+  background-color: #F5F3F3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.bill__subtotal {
+  display: flex;
+  gap: 15px;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.bill__total {
+  display: flex;
+  gap: 15px;
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.bill__total__amount {
+  color: #F16D7F;
+  font-weight: bold;
+}
+.bill__checkout-button {
+  display: block;
+  box-sizing: border-box;
+  width: 273px;
+  height: 50px;
+  background-color: #F16D7F;
+  margin-top: 17px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  transition: all 0.3s;
+}
+.bill__checkout-button:hover {
+  background-color: #FFF;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
 }
 
 * {
