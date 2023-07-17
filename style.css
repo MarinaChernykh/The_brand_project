@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navigation {
   background-color: #F8F3F4;
 }
@@ -15,24 +16,34 @@
   align-content: center;
   justify-content: space-between;
 }
-.navigation__bread-crumbs {
+.navigation__breadcrumbs-ul {
   padding-top: 66px;
   padding-bottom: 66px;
   display: flex;
-  justify-content: space-between;
-  gap: 6px;
+  list-style-type: none;
 }
-.navigation__link, .navigation__delimiter, .navigation__current-link {
+.navigation__breadcrumbs-li:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.navigation__breadcrumbs-link {
   color: #636363;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 17px;
 }
-.navigation__current-link {
+.navigation__breadcrumbs-link-last {
+  font-weight: 700;
   color: #F16D7F;
 }
-.navigation__link:hover, .navigation__current-link:hover {
+.navigation__breadcrumbs-link:hover {
   text-decoration: underline;
 }
 
@@ -547,6 +558,106 @@ input::-webkit-inner-spin-button {
   background-color: #FFF;
   border: 1px solid #F16D7F;
   color: #F16D7F;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
+}
+.registration__form {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+}
+.registration__form__header {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  padding-bottom: 10px;
+}
+.registration__form__input-field {
+  width: 360px;
+  height: 45px;
+  box-sizing: border-box;
+  margin: 10px 0 10px 0;
+  padding: 0 16px 0 16px;
+  fill: #FFF;
+  border: solid 1px #A4A4A4;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-weight: 300;
+}
+.registration__form__radio {
+  margin: 20px 0 33px 0;
+  display: flex;
+  gap: 20px;
+}
+.registration__form__radio-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #222222;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 13px;
+}
+.registration__form__text {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  max-width: 360px;
+  padding-top: 5px;
+  margin-bottom: 40px;
+}
+.registration__form__button {
+  width: 167px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #F16D7F;
+  border: solid 1px #F16D7F;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.registration__form__button:hover {
+  background-color: #FFF;
+  color: #F16D7F;
+}
+.registration__loyalty {
+  color: #000;
+  max-width: 652px;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+.registration__loyalty__header {
+  font-weight: 300;
+  padding-bottom: 22px;
+}
+.registration__loyalty__text {
+  padding-bottom: 22px;
+}
+.registration__loyalty__list {
+  list-style: none;
+}
+.registration__loyalty__list-item {
+  padding-bottom: 16px;
+}
+.registration__loyalty__list-item::before {
+  content: "✔";
+  padding-right: 22px;
 }
 
 * {
