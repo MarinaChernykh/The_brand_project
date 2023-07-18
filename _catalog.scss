@@ -141,7 +141,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 48px;
     margin-bottom: 96px;
 
     &__group {
@@ -171,5 +171,18 @@
     &__icon:hover path {
         fill: $highlights_font_color;
     }
+}
 
+@media (max-width: 1023px) {
+    .filter-sort {
+        padding-top: 11px;
+        height: 81px;
+    }
+
+    .catalog {
+        &__product-cards-catalog {
+            margin-top: 0;
+            gap: 16px;
+        }
+    }
 }

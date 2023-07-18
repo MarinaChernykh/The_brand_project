@@ -55,6 +55,10 @@
     }
 }
 
+.catalog-space  {
+    margin-bottom: 129px;
+}
+
 .product__info {
     position: relative;
 }
@@ -220,4 +224,31 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 128px;
+}
+
+@media (max-width: 1023px) {
+    .product__gallery {
+        margin-bottom: 0;
+
+        &__image {
+            margin-top: 29px;
+            margin-bottom: 29px;
+            height: 565px;
+        }
+    }
+
+    .product__data {
+        position: static;
+        border-left: 0;
+        border-right: 0;
+
+        &__text {
+            padding: 0px 106px 32px 106px;
+        }
+    }
+
+    .hidden_product {
+        display: none;
+    }
+
 }

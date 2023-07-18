@@ -251,6 +251,7 @@ summary::-webkit-details-marker {
 }
 
 .catalog {
+
     &__title {
         font-style: normal;
         font-weight: 400;
@@ -271,7 +272,7 @@ summary::-webkit-details-marker {
     }
     &__product-cards {
         display: grid;
-        gap: 2.5%;
+        gap: 30px;
         grid-template-columns: repeat(3, 31.5%);
         justify-content: center;
     }
@@ -376,7 +377,7 @@ summary::-webkit-details-marker {
     width: 212px;
     height: 48px;
     border: 1px solid $highlights_background;
-    margin: 70px auto 95px auto;
+    margin: 48px auto 95px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -653,9 +654,8 @@ summary::-webkit-details-marker {
     }
 
     .catalog__product-cards {
-        margin-top: 73px;
-        margin-bottom: 33px;
         grid-template-columns: repeat(2, 360px);
+        gap: 16px;
     }
     
     .product {
@@ -670,8 +670,8 @@ summary::-webkit-details-marker {
     }
 
     .button {
-        margin-top: 120px;
-        margin-bottom: 70px;
+        margin-top: 32px;
+        margin-bottom: 64px;
     }
 
     .service__content {

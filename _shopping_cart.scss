@@ -230,3 +230,27 @@ input::-webkit-inner-spin-button {
         color: $highlights_font_color;
     }
 }
+
+@media (max-width: 1023px) {
+    .shopping-cart {
+        margin-top: 59px;
+        flex-direction: column;
+
+        &__product-item {
+            width: 734px;
+        }
+
+        &__buttons {
+            width: 518px;
+            margin: auto;
+            padding-top: 12px;
+            padding-bottom: 64px;
+        }
+
+        &__container-right {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 128px;
+        }
+    }
+}

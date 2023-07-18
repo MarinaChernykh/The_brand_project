@@ -113,3 +113,21 @@
         }
     }
 }
+
+
+@media (max-width: 1023px) {
+    .registration {
+        padding-top: 40px;
+        gap: 22px;
+    
+        &__loyalty {
+            max-width: 354px;
+            font-size: 16px;
+            line-height: 19px;
+    
+            &__header {
+                padding-bottom: 32px;
+            }
+        }
+    }
+}
