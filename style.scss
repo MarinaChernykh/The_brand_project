@@ -79,7 +79,7 @@ summary::-webkit-details-marker {
         position: absolute;
         right: 0%;
         top: 60px;
-        z-index: 1;
+        z-index: 100;
         opacity: 0;
         cursor: pointer;
         transition: opacity 0.5s;

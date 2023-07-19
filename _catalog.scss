@@ -186,3 +186,44 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .filter-sort {
+        margin-bottom: -65px;
+    }
+
+    .filter {
+        &__heading {
+            display: none;
+        }
+
+        &__summary {
+            gap: 0px;
+            padding-left: 0;
+        }
+
+        &__logo {
+            width:37.5px;
+            height: 25px;
+        }
+
+        &__content {
+            width: 200px;
+            position: relative;
+            z-index: 30;
+        }
+    }
+
+    .sort {
+        gap: 23px;
+
+        &__heading {
+            font-size: 12px;
+        }
+    }
+
+    .paginator {
+        margin-top: 40px;
+        margin-bottom: 64px;
+    }
+}
